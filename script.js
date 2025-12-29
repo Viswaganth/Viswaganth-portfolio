@@ -39,6 +39,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Contact form
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Message sent successfully! Thank you for reaching out.');
     this.reset();
 });
