@@ -380,83 +380,94 @@ h2 {
 /* Mobile */
 @media (max-width: 768px) {
     .section {
-        padding: 80px 20px;
+        padding: 60px 20px;
+    }
+    
+    #hero {
+        padding-top: 160px; /* Accounts for taller wrapped header */
     }
 
     .navbar {
-        padding: 15px 20px;
+        padding: 10px 10px;
         flex-direction: column;
     }
 
     .nav-links {
-        margin-top: 20px;
-        gap: 15px;
+        margin-top: 10px;
+        gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .nav-links a {
-        font-size: 0.95em;
+        font-size: 0.85em; /* Smaller so it fits better */
     }
 
     .hero-profile-pic {
-        width: 180px;
-        height: 180px;
-        border-width: 5px;
+        width: 150px;
+        height: 150px;
+        border-width: 4px;
         margin-bottom: 20px;
     }
 
     .hero-content h1 {
-        font-size: 2.4em;
+        font-size: 2em; /* Prevent wrapping issues */
+        margin: 10px 0;
     }
 
     .hero-content p {
-        font-size: 1.1em;
-        margin-bottom: 30px;
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+    
+    .btn {
+        padding: 12px 25px; /* Stop buttons from being massive */
+        font-size: 0.95em;
     }
 
     h2 {
-        font-size: 2.2em;
-        margin-bottom: 40px;
+        font-size: 1.8em;
+        margin-bottom: 30px;
     }
 
     .dashboard-container {
-        padding: 15px;
+        padding: 10px;
     }
 
     .project-dashboard {
-        max-height: 350px;
+        max-height: 250px;
         border-width: 2px;
     }
 
     .project-info {
-        padding: 25px 20px;
+        padding: 20px 15px;
     }
 
     .project-info h3 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     .skills-icons-grid {
-        gap: 25px;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr); /* Force 2 columns on mobile */
     }
 
     .skill-icon img {
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
     }
 
     .card {
-        padding: 25px 20px;
+        padding: 20px 15px;
     }
 
     .contact-form {
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
     .contact-form input,
     .contact-form textarea {
-        padding: 14px;
+        padding: 12px;
     }
 }
 
