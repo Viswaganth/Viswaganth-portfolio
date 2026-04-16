@@ -379,12 +379,17 @@ h2 {
 
 /* Mobile */
 @media (max-width: 768px) {
+    header {
+        position: static;
+    }
+    
     .section {
         padding: 60px 20px;
     }
     
     #hero {
-        padding-top: 160px; /* Accounts for taller wrapped header */
+        padding-top: 50px; /* Reduced because header is no longer fixed */
+        min-height: auto; /* Allow natural flow */
     }
 
     .navbar {
